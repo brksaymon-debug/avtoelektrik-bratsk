@@ -1,0 +1,28 @@
+ВИДЕО
+Обработка: обрезка, ускорение, кадрирование (номера и эмблемы убраны из кадра где возможно), цветокоррекция, склейка, раскадровка в WebP-секвенцию.
+
+  01 Фары загораются  — Coverr (Free Commercial Rights) — «Nissan 300ZX headlights open up»
+                         https://coverr.co/videos/nissan-300zx-headlights-open-up-bg98le18on
+  02 Открытие капота  — Coverr (Free Commercial Rights) — «Lifting up bonnet and adding washer fluid»
+                         https://coverr.co/videos/lifting-up-bonnet-and-adding-washer-fluid-nvacfhbwed
+  03 Моторный отсек   — Pedro H. Novais — Pexels License
+                         https://www.pexels.com/video/close-up-of-a-car-engine-showing-mechanical-details-39112150/
+  04 Брелок           — Burak Odabas — Pexels License
+                         https://www.pexels.com/video/the-front-end-of-a-white-bmw-car-at-night-27807965/
+  05–06 Вид сверху    — Finn McGuire — Pexels License
+                         https://www.pexels.com/video/drone-footage-of-cars-in-a-parking-lot-8171135/
+
+Pexels License: https://www.pexels.com/license/ — бесплатное коммерческое использование, без обязательной атрибуции.
+Coverr License: Free Commercial Rights, без обязательной атрибуции.
+
+Кадры для окошек «Камеры 360°» (assets/img/cam-*.webp) вырезаны из клипов ночного заезда и вида сверху.
+
+ФОТО — Unsplash (Unsplash License: бесплатное коммерческое использование)
+  fusebox-*.webp    — Maxim Hopman — https://unsplash.com/photos/a-man-is-working-on-a-cars-engine-s4d_ESS0ylA
+  multimeter-*.webp — Nekhil R — https://unsplash.com/photos/black-and-red-digital-device-g8Pr-LbVbjU
+  battery-*.webp    — C (@thecurlyone) — https://unsplash.com/photos/multimeter-connected-to-motorcycle-battery-VBPM37v2Eek
+  screen-*.webp     — Hans (@hansphoto) — https://unsplash.com/photos/the-dashboard-of-a-vehicle-with-a-touch-screen-3sRFIUn-y28
+  garage-*.webp     — Ryan Spencer — https://unsplash.com/photos/white-sports-car-in-parking-garage-c-NEiPIxpYI
+
+ШРИФТЫ: Oswald, Golos Text, JetBrains Mono — Google Fonts (SIL OFL).
+БИБЛИОТЕКИ: GSAP + ScrollTrigger (GreenSock standard license), Lenis (MIT).

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Автоэлектрик в Братске — сигнализации, диагностика, камеры 360°</title>
+<meta name="description" content="Автоэлектрик в Братске: установка автосигнализаций с управлением со смартфона, диагностика и ремонт электрики, замена АКБ, камеры 360° на Android. Запись: 26-22-44, WhatsApp 8 924 616-88-33.">
+<meta name="theme-color" content="#1b1c1e">
+<meta property="og:title" content="Автоэлектрик в Братске — ваш автомобиль под контролем">
+<meta property="og:description" content="Сигнализации со смартфона, диагностика и ремонт электрики, камеры 360° на Android. Гарантия на работы.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1c1e'/%3E%3Cpath d='M18 3 7 18h8l-2 11 12-16h-8z' fill='%23f5c400'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/poster-d.webp" media="(min-width: 761px) and (orientation: landscape)">
+<link rel="preload" as="image" href="assets/img/poster-m.webp" media="(max-width: 760px), (orientation: portrait)">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.className="js"</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="hdr" id="top">
+  <a class="logo" href="#top" aria-label="Автоэлектрик, Братск — на главную">
+    <svg class="logo__bolt" viewBox="0 0 20 28" aria-hidden="true"><path d="M12 0 0 16h7.5L5 28 20 10h-8z"/></svg>
+    <span class="logo__name">Автоэлектрик</span>
+    <span class="logo__city">Братск</span>
+  </a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#services">Услуги</a>
+    <a href="#process">Как работаем</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <a class="hdr__tel" href="tel:+73953262244">26‑22‑44</a>
+</header>
+
+<main id="main">
+
+<!-- HERO: scroll-scrubbed film (image sequence on canvas) -->
+<section class="film" id="film" aria-labelledby="hero-title">
+  <div class="film__pin">
+    <picture class="film__poster">
+      <source media="(max-width: 760px), (orientation: portrait)" srcset="assets/img/poster-m.webp" width="720" height="900">
+      <img src="assets/img/poster-d.webp" width="1536" height="864" alt="Автомобиль с включёнными фарами выезжает из темноты" fetchpriority="high">
+    </picture>
+    <canvas class="film__cv" aria-hidden="true"></canvas>
+    <div class="film__shade" aria-hidden="true"></div>
+
+    <div class="hud" aria-hidden="true">
+      <span class="hud__c hud__c--tl"></span><span class="hud__c hud__c--tr"></span><span class="hud__c hud__c--bl"></span><span class="hud__c hud__c--br"></span>
+      <span class="hud__geo">Братск · 56.15° N · 101.63° E</span>
+      <span class="hud__tc"><i class="hud__dot"></i><span id="tc">00:00:00</span></span>
+      <div class="hud__prog"><i id="prog"></i></div>
+      <ol class="hud__ch">
+        <li data-c="0">Контроль</li><li data-c="1">Электрика</li><li data-c="2">Сигнализация</li><li data-c="3">Камеры 360°</li><li data-c="4">Запись</li>
+      </ol>
+    </div>
+
+    <!-- 01 -->
+    <div class="ch ch--hero" data-in="0" data-out=".14">
+      <p class="ch__k"><span>01</span>Автоэлектрик в&nbsp;Братске</p>
+      <h1 class="ch__h1" id="hero-title"><span class="ln"><span>Ваш автомобиль</span></span><span class="ln"><span>под&nbsp;контролем</span></span></h1>
+      <div class="ch__row rv">
+        <div class="cta">
+          <a class="btn btn--fill" href="tel:+73953262244"><span>Позвонить</span><b>26‑22‑44</b></a>
+          <a class="btn btn--line" href="https://wa.me/79246168833" target="_blank" rel="noopener"><span>WhatsApp</span><b>8&nbsp;924&nbsp;616‑88‑33</b></a>
+        </div>
+        <div class="volt" aria-hidden="true">
+          <span class="volt__l">Бортовая сеть</span>
+          <span class="volt__v"><span id="volt">12.6</span><small>V</small></span>
+          <span class="volt__s"><i></i></span>
+        </div>
+      </div>
+      <p class="ch__hint" aria-hidden="true"><i></i>Листайте</p>
+    </div>
+
+    <!-- 02 -->
+    <div class="ch ch--elec" data-in=".24" data-out=".5">
+      <p class="ch__k"><span>02</span>Автоэлектрик · диагностика</p>
+      <h2 class="ch__h2"><span class="ln"><span>Находим причину,</span></span><span class="ln"><span>а&nbsp;не&nbsp;меняем всё&nbsp;подряд</span></span></h2>
+      <ul class="readout rv">
+        <li><span>Диагностика электрики</span><b>OK</b></li>
+        <li><span>Ремонт проводки и&nbsp;блоков</span><b>OK</b></li>
+        <li><span>Замена и&nbsp;проверка АКБ</span><b>12.6 V</b></li>
+        <li><span>Доп. оборудование</span><b>+</b></li>
+      </ul>
+    </div>
+
+    <!-- 03 -->
+    <div class="ch ch--alarm" data-in=".55" data-out=".69">
+      <div class="ch__txt">
+        <p class="ch__k"><span>03</span>Сигнализация со&nbsp;смартфона</p>
+        <h2 class="ch__h2"><span class="ln"><span>Машина</span></span><span class="ln"><span>в&nbsp;вашем телефоне</span></span></h2>
+        <p class="ch__p rv">Охрана, автозапуск и&nbsp;местоположение&nbsp;— из&nbsp;любой точки, где есть связь.</p>
+      </div>
+      <div class="phone rv" aria-hidden="true">
+        <div class="phone__scr">
+          <div class="phone__bar"><span>21:47</span><span>LTE ▮▮▮</span></div>
+          <p class="phone__car">Мой автомобиль</p>
+          <p class="phone__st"><i></i><span class="phone__stt">Снято с&nbsp;охраны</span></p>
+          <div class="phone__ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54"/><circle class="arc" cx="60" cy="60" r="54"/></svg><span class="phone__ico"></span></div>
+          <dl class="phone__data"><div><dt>Салон</dt><dd>−18°</dd></div><div><dt>АКБ</dt><dd>12.6 V</dd></div><div><dt>Двигатель</dt><dd class="phone__eng">выкл</dd></div></dl>
+          <div class="phone__btns"><span class="pb pb--lock">Закрыть</span><span class="pb pb--open">Открыть</span><span class="pb pb--run">Запуск</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="ch ch--cams" data-in=".72" data-out=".84">
+      <div class="ch__txt">
+        <p class="ch__k"><span>04</span>Камеры 360° · Android</p>
+        <h2 class="ch__h2"><span class="ln"><span>Вид сверху.</span></span><span class="ln"><span>Без слепых зон</span></span></h2>
+      </div>
+      <div class="sv rv" aria-hidden="true">
+        <div class="sv__frame"><span class="sv__tag">AVM · 360°</span><span class="sv__rec">REC</span><svg class="sv__guide" viewBox="0 0 200 120" preserveAspectRatio="none"><path d="M60 120 C70 70 75 40 80 0"/><path d="M140 120 C130 70 125 40 120 0"/><path d="M66 90 H134" /><path d="M72 55 H128"/></svg></div>
+        <div class="sv__tiles">
+          <figure><img src="assets/img/cam-front.webp" alt="" width="480" height="300" loading="lazy"><figcaption>Перед</figcaption></figure>
+          <figure><img src="assets/img/cam-rear.webp" alt="" width="480" height="300" loading="lazy"><figcaption>Зад</figcaption></figure>
+          <figure><img src="assets/img/cam-left.webp" alt="" width="480" height="300" loading="lazy"><figcaption>Лево</figcaption></figure>
+          <figure><img src="assets/img/cam-right.webp" alt="" width="480" height="300" loading="lazy"><figcaption>Право</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="ch ch--cta" data-in=".88" data-out="1.01">
+      <p class="ch__k"><span>05</span>Запись по&nbsp;телефону</p>
+      <a class="bignum" href="tel:+73953262244" aria-label="Позвонить: 26-22-44"><span class="ln"><span>26‑22‑44</span></span></a>
+      <div class="cta rv">
+        <a class="btn btn--fill" href="tel:+73953262244"><span>Позвонить</span></a>
+        <a class="btn btn--line" href="https://wa.me/79246168833" target="_blank" rel="noopener"><span>WhatsApp</span><b>8&nbsp;924&nbsp;616‑88‑33</b></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mqwrap" aria-hidden="true"><div class="mq">
+  <div class="mq__track">
+    <span>Автосигнализации</span><span>Автозапуск</span><span>Диагностика</span><span>Замена АКБ</span><span>Видеорегистраторы</span><span>Парктроники</span><span>Подогревы</span><span>Ремонт проводки</span><span>Предохранители</span><span>Блоки управления</span><span>Камеры 360°</span>
+  </div>
+  <div class="mq__track">
+    <span>Автосигнализации</span><span>Автозапуск</span><span>Диагностика</span><span>Замена АКБ</span><span>Видеорегистраторы</span><span>Парктроники</span><span>Подогревы</span><span>Ремонт проводки</span><span>Предохранители</span><span>Блоки управления</span><span>Камеры 360°</span>
+  </div>
+</div></div>
+
+<!-- SERVICES -->
+<div id="services">
+
+<!-- 01 Electric: list rows with image peek -->
+<section class="svc svc--electric" id="s-electric" aria-labelledby="t-electric">
+  <div class="svc__num" aria-hidden="true">01</div>
+  <div class="svc__head">
+    <h2 class="h2" id="t-electric" data-split>Автоэлектрик: диагностика, ремонт, установка</h2>
+    <p class="svc__intro">Находим причину, а&nbsp;не&nbsp;меняем всё подряд. Проверяем цепь за&nbsp;цепью и&nbsp;чиним то, что действительно сломано.</p>
+  </div>
+  <ul class="rows">
+    <li class="row" data-img="assets/img/multimeter-800.webp">
+      <h3 class="row__t">Поиск и&nbsp;устранение неисправностей</h3>
+      <p class="row__d">Электрооборудование автомобиля: от&nbsp;плавающих ошибок до&nbsp;«не&nbsp;заводится».</p>
+    </li>
+    <li class="row" data-img="assets/img/battery-800.webp">
+      <h3 class="row__t">Замена и&nbsp;восстановление АКБ</h3>
+      <p class="row__d">Проверим аккумулятор и&nbsp;зарядку, подскажем: восстанавливать или менять.</p>
+    </li>
+    <li class="row" data-img="assets/img/screen-800.webp">
+      <h3 class="row__t">Установка доп. оборудования</h3>
+      <p class="row__d">Видеорегистраторы, парктроники, подогревы и&nbsp;другое — с&nbsp;аккуратной прокладкой проводки.</p>
+    </li>
+    <li class="row" data-img="assets/img/fusebox-800.webp">
+      <h3 class="row__t">Ремонт проводки</h3>
+      <p class="row__d">Жгуты, предохранители, блоки управления.</p>
+    </li>
+  </ul>
+  <div class="peek" aria-hidden="true"><img alt="" src="assets/img/multimeter-800.webp" width="800" height="592"></div>
+  <figure class="svc__photo svc__photo--meter">
+    <div class="ph" data-clip><img src="assets/img/multimeter-1600.webp" srcset="assets/img/multimeter-800.webp 800w, assets/img/multimeter-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 40vw" width="1600" height="1185" loading="lazy" alt="Цифровой мультиметр со щупами"></div>
+  </figure>
+</section>
+
+<!-- 02 Alarm: split, spec table -->
+<section class="svc svc--alarm" id="s-alarm" aria-labelledby="t-alarm">
+  <div class="svc__num" aria-hidden="true">02</div>
+  <div class="svc__head">
+    <h2 class="h2" id="t-alarm" data-split>Сигнализация, которая живёт в&nbsp;телефоне</h2>
+    <p class="svc__intro">Установка автосигнализации с&nbsp;управлением со&nbsp;смартфона: машина на&nbsp;связи, где бы вы&nbsp;ни были.</p>
+  </div>
+  <figure class="svc__photo svc__photo--alarm">
+    <div class="ph" data-clip><img src="assets/img/garage-1600.webp" srcset="assets/img/garage-800.webp 800w, assets/img/garage-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw" width="1600" height="1067" loading="lazy" alt="Автомобиль с включёнными фарами на тёмной парковке"></div>
+  </figure>
+  <dl class="spec">
+    <div class="spec__row"><dt>Управление</dt><dd>Из&nbsp;любой точки мира — со&nbsp;смартфона</dd></div>
+    <div class="spec__row"><dt>Защита</dt><dd>Надёжная охрана вашего автомобиля</dd></div>
+    <div class="spec__row"><dt>Уведомления</dt><dd>Сообщения о&nbsp;событиях приходят на&nbsp;телефон</dd></div>
+    <div class="spec__row"><dt>Автозапуск</dt><dd>По&nbsp;желанию — прогрев двигателя до&nbsp;того, как вы&nbsp;вышли из&nbsp;дома</dd></div>
+  </dl>
+</section>
+
+<!-- 03 Cameras: full-bleed stage + view dial -->
+<section class="svc svc--cams" id="s-cams" aria-labelledby="t-cams">
+  <div class="cams__bg" aria-hidden="true">
+    <img src="assets/img/screen-1600.webp" srcset="assets/img/screen-800.webp 800w, assets/img/screen-1600.webp 1600w" sizes="100vw" width="1600" height="1067" loading="lazy" alt="" data-parallax="10">
+  </div>
+  <div class="svc__num" aria-hidden="true">03</div>
+  <div class="cams__inner">
+    <h2 class="h2 cams__title" id="t-cams" data-split>Камеры 360° на&nbsp;Android</h2>
+    <p class="svc__intro">Полный обзор вокруг автомобиля на&nbsp;экране магнитолы. Паркуетесь по&nbsp;картинке, а&nbsp;не&nbsp;на&nbsp;слух.</p>
+    <div class="cams__grid">
+      <div class="dial" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="88" class="dial__ring"/>
+          <path class="dial__seg" d="M100 12 A88 88 0 0 1 188 100" />
+          <path class="dial__seg" d="M188 100 A88 88 0 0 1 100 188" />
+          <path class="dial__seg" d="M100 188 A88 88 0 0 1 12 100" />
+          <path class="dial__seg" d="M12 100 A88 88 0 0 1 100 12" />
+          <rect x="84" y="66" width="32" height="68" rx="9" class="dial__car"/>
+          <rect x="89" y="80" width="22" height="14" rx="3" class="dial__glass"/>
+        </svg>
+        <span class="dial__l dial__l--t">Перед</span>
+        <span class="dial__l dial__l--r">Право</span>
+        <span class="dial__l dial__l--b">Зад</span>
+        <span class="dial__l dial__l--l">Лево</span>
+      </div>
+      <ul class="ticks">
+        <li>Полный обзор вокруг автомобиля</li>
+        <li>Без слепых зон</li>
+        <li>Удобная парковка и&nbsp;манёвры</li>
+        <li>Качественная картинка днём и&nbsp;ночью</li>
+        <li>Совместимость с&nbsp;любыми авто</li>
+        <li>Функция записи</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- WHY -->
+<section class="why" aria-labelledby="t-why">
+  <h2 class="h2 why__title" id="t-why" data-split>Что вы&nbsp;получаете</h2>
+  <ul class="why__list">
+    <li><h3>Гарантия на&nbsp;работы</h3><p>На&nbsp;выполненные работы даём гарантию. Условия уточним при записи.</p></li>
+    <li><h3>Профессиональное оборудование</h3><p>Диагностика приборами, а&nbsp;не&nbsp;на&nbsp;глаз.</p></li>
+    <li><h3>Быстро и&nbsp;качественно</h3><p>Согласуем время заранее и&nbsp;не&nbsp;держим машину лишнего.</p></li>
+    <li><h3>Честные цены</h3><p>Стоимость называем до&nbsp;начала работ. Без сюрпризов в&nbsp;конце.</p></li>
+  </ul>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process" aria-labelledby="t-process">
+  <div class="process__head">
+    <h2 class="h2" id="t-process" data-split>Как мы&nbsp;работаем</h2>
+    <p>Четыре шага от&nbsp;звонка до&nbsp;выдачи машины.</p>
+  </div>
+  <div class="wire" aria-hidden="true"><svg viewBox="0 0 1000 20" preserveAspectRatio="none"><path id="wirePath" d="M0 10 H1000"/></svg></div>
+  <ol class="steps">
+    <li><span class="steps__n">1</span><h3>Звонок или WhatsApp</h3><p>Опишите, что случилось или что хотите установить.</p></li>
+    <li><span class="steps__n">2</span><h3>Диагностика и&nbsp;консультация</h3><p>Смотрим автомобиль, находим причину, подбираем оборудование.</p></li>
+    <li><span class="steps__n">3</span><h3>Цена и&nbsp;сроки</h3><p>Называем стоимость и&nbsp;время до&nbsp;начала работ.</p></li>
+    <li><span class="steps__n">4</span><h3>Работа и&nbsp;гарантия</h3><p>Делаем, проверяем вместе с&nbsp;вами, выдаём машину с&nbsp;гарантией.</p></li>
+  </ol>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-labelledby="t-faq">
+  <h2 class="h2" id="t-faq" data-split>Частые вопросы</h2>
+  <div class="faq__list">
+    <details>
+      <summary>Где вы&nbsp;находитесь в&nbsp;Братске?</summary>
+      <p>[Адрес уточняется] Позвоните 26‑22‑44 или напишите в&nbsp;WhatsApp — подскажем, как подъехать.</p>
+    </details>
+    <details>
+      <summary>Можно поставить сигнализацию с&nbsp;автозапуском?</summary>
+      <p>Да. Автозапуск устанавливаем по&nbsp;желанию вместе с&nbsp;сигнализацией, управление — со&nbsp;смартфона.</p>
+    </details>
+    <details>
+      <summary>Подойдут ли камеры 360° на&nbsp;мою машину?</summary>
+      <p>Системы совместимы с&nbsp;любыми автомобилями. Назовите марку и&nbsp;модель — расскажем, как будет выглядеть установка.</p>
+    </details>
+    <details>
+      <summary>Сколько стоит работа?</summary>
+      <p>Зависит от&nbsp;автомобиля и&nbsp;задачи. Точную цену называем после консультации или диагностики и&nbsp;до&nbsp;начала работ.</p>
+    </details>
+    <details>
+      <summary>Аккумулятор садится за&nbsp;ночь — это к&nbsp;вам?</summary>
+      <p>Да. Проверим АКБ, зарядку и&nbsp;найдём утечку тока в&nbsp;бортовой сети.</p>
+    </details>
+    <details>
+      <summary>Даёте гарантию?</summary>
+      <p>Да, на&nbsp;выполненные работы. Условия расскажем при записи.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts" aria-labelledby="t-contacts">
+  <h2 class="contacts__title" id="t-contacts">Запись и&nbsp;консультация в&nbsp;Братске</h2>
+  <div class="contacts__grid">
+    <div class="contacts__phones">
+      <a class="bigtel" href="tel:+73953262244"><span>Телефон</span>26‑22‑44</a>
+      <a class="bigtel" href="https://wa.me/79246168833" target="_blank" rel="noopener"><span>WhatsApp</span>8&nbsp;924&nbsp;616‑88‑33</a>
+      <dl class="contacts__meta">
+        <div><dt>Адрес</dt><dd class="ph-note">Адрес уточняется</dd></div>
+        <div><dt>Режим работы</dt><dd class="ph-note">Режим работы уточняется</dd></div>
+      </dl>
+    </div>
+    <form class="form" id="form" novalidate>
+      <h3>Оставьте номер — перезвоним</h3>
+      <label>Имя<input name="name" type="text" autocomplete="given-name" required></label>
+      <label>Телефон<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7" required></label>
+      <label>Что нужно сделать <i>(необязательно)</i><textarea name="msg" rows="3"></textarea></label>
+      <button class="btn btn--fill" type="submit"><span>Отправить заявку</span></button>
+      <p class="form__note">Сервера нет: заявка откроется в&nbsp;WhatsApp готовым сообщением, его останется отправить. <!-- PLACEHOLDER: подключить приём заявок (Telegram-бот / почта / CRM) --></p>
+      <p class="form__err" role="alert" hidden>Укажите имя и&nbsp;телефон.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="ftr__big" aria-hidden="true">Автоэлектрик</div>
+  <div class="ftr__row">
+    <span>Автоэлектрик в&nbsp;Братске. Сигнализации, электрика, камеры 360°.</span>
+    <span><a href="tel:+73953262244">26‑22‑44</a> &nbsp; <a href="https://wa.me/79246168833">WhatsApp</a></span>
+    <span>© 2026 · <a href="credits.txt">Фото и видео: Pexels, Unsplash</a></span>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Быстрая связь">
+  <a href="tel:+73953262244" class="dock__call">Позвонить</a>
+  <a href="https://wa.me/79246168833" target="_blank" rel="noopener" class="dock__wa">WhatsApp</a>
+</nav>
+
+<script src="assets/js/gsap.min.js" defer></script>
+<script src="assets/js/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/film.js" defer></script>
+</body>
+</html>
