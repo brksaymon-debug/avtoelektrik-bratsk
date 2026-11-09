@@ -29,21 +29,9 @@
   if (!window.gsap || !window.ScrollTrigger) { settle(); return; }
   gsap.registerPlugin(ScrollTrigger);
 
-  let lenis = null;
-  if (!RM && window.Lenis) {
-    lenis = new Lenis({ lerp: .1, smoothWheel: true });
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add((t) => lenis.raf(t * 1000));
-    gsap.ticker.lagSmoothing(0);
-    $$('a[href^="#"]').forEach((a) => a.addEventListener('click', (e) => {
-      const id = a.getAttribute('href'); const el = id.length > 1 ? $(id) : document.body;
-      if (el) { e.preventDefault(); lenis.scrollTo(el, { offset: id === '#top' ? 0 : -70, duration: 1.3 }); }
-    }));
-  }
-
-  /* header hides on scroll down */
-  let lastY = 0; const hdr = $('.hdr');
-  addEventListener('scroll', () => { const y = scrollY; hdr.classList.toggle('is-hidden', y > 300 && y > lastY); lastY = y; }, { passive: true });
+  /* header hides on scroll down (class flips only when state changes) */
+  let lastY = 0, hid = false; const hdr = $('.hdr');
+  addEventListener('scroll', () => { const y = scrollY, h = y > 300 && y > lastY; if (h !== hid) { hid = h; hdr.classList.toggle('is-hidden', h); } lastY = y; }, { passive: true });
 
   if (RM) { settle(); return; }
 
@@ -59,14 +47,12 @@
 
   /* image clip reveals (non-hero) */
   $$('.svc [data-clip]').forEach((el) => {
-    gsap.fromTo(el, { clipPath: 'inset(100% 0 0 0)' }, { clipPath: 'inset(0% 0 0 0)', duration: 1.4, ease: 'expo.out',
-      scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
-    gsap.from($('img', el), { scale: 1.2, duration: 1.8, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
+    gsap.from(el, { autoAlpha: 0, y: 40, duration: 1.2, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
+    gsap.from($('img', el), { scale: 1.08, duration: 1.6, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
   });
 
   /* outline numbers drift */
   $$('.svc__num').forEach((n) => gsap.to(n, { yPercent: -30, ease: 'none', scrollTrigger: { trigger: n.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } }));
-  $$('[data-parallax]').forEach((el) => gsap.fromTo(el, { yPercent: -8 }, { yPercent: 0, ease: 'none', scrollTrigger: { trigger: el.closest('section'), start: 'top bottom', end: 'bottom top', scrub: true } }));
 
   /* camera dial segments light up in sequence */
   gsap.from('.dial__seg', { opacity: .12, duration: .5, stagger: .25, ease: 'power2.out', scrollTrigger: { trigger: '.dial', start: 'top 80%', once: true } });

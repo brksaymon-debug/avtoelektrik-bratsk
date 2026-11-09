@@ -8,20 +8,19 @@
 <meta name="theme-color" content="#1b1c1e">
 <meta property="og:title" content="Автоэлектрик в Братске — ваш автомобиль под контролем">
 <meta property="og:description" content="Сигнализации со смартфона, диагностика и ремонт электрики, камеры 360° на Android. Гарантия на работы.">
-<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:image" content="assets/video/1-hero-d.jpg">
 <meta property="og:locale" content="ru_RU">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1c1e'/%3E%3Cpath d='M18 3 7 18h8l-2 11 12-16h-8z' fill='%23f5c400'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="assets/img/poster-d.webp" media="(min-width: 761px) and (orientation: landscape)">
-<link rel="preload" as="image" href="assets/img/poster-m.webp" media="(max-width: 760px), (orientation: portrait)">
+<link rel="preload" as="image" href="assets/video/1-hero-d.jpg" media="(min-width: 761px) and (orientation: landscape)">
+<link rel="preload" as="image" href="assets/video/1-hero-m.jpg" media="(max-width: 760px), (orientation: portrait)">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.className="js"</script>
 </head>
 <body>
-<div class="grain" aria-hidden="true"></div>
 <a class="skip" href="#main">Перейти к содержанию</a>
 
 <header class="hdr" id="top">
@@ -41,20 +40,26 @@
 
 <main id="main">
 
-<!-- HERO: scroll-scrubbed film (image sequence on canvas) -->
+<!-- HERO: sticky stage, 5 HD chapter videos crossfading on native scroll -->
 <section class="film" id="film" aria-labelledby="hero-title">
   <div class="film__pin">
     <picture class="film__poster">
-      <source media="(max-width: 760px), (orientation: portrait)" srcset="assets/img/poster-m.webp" width="720" height="900">
-      <img src="assets/img/poster-d.webp" width="1536" height="864" alt="Автомобиль с включёнными фарами выезжает из темноты" fetchpriority="high">
+      <source media="(max-width: 760px), (orientation: portrait)" srcset="assets/video/1-hero-m.jpg" width="1080" height="1350">
+      <img src="assets/video/1-hero-d.jpg" width="1920" height="1080" alt="Приборная панель автомобиля ночью" fetchpriority="high">
     </picture>
-    <canvas class="film__cv" aria-hidden="true"></canvas>
+    <div class="film__vids" aria-hidden="true">
+      <video class="film__v" muted playsinline loop preload="none" disablepictureinpicture data-d="assets/video/1-hero-d.mp4" data-m="assets/video/1-hero-m.mp4" data-pd="assets/video/1-hero-d.jpg" data-pm="assets/video/1-hero-m.jpg"></video>
+      <video class="film__v" muted playsinline loop preload="none" disablepictureinpicture data-d="assets/video/2-elec-d.mp4" data-m="assets/video/2-elec-m.mp4" data-pd="assets/video/2-elec-d.jpg" data-pm="assets/video/2-elec-m.jpg"></video>
+      <video class="film__v" muted playsinline loop preload="none" disablepictureinpicture data-d="assets/video/3-alarm-d.mp4" data-m="assets/video/3-alarm-m.mp4" data-pd="assets/video/3-alarm-d.jpg" data-pm="assets/video/3-alarm-m.jpg"></video>
+      <video class="film__v" muted playsinline loop preload="none" disablepictureinpicture data-d="assets/video/4-cams-d.mp4" data-m="assets/video/4-cams-m.mp4" data-pd="assets/video/4-cams-d.jpg" data-pm="assets/video/4-cams-m.jpg"></video>
+      <video class="film__v" muted playsinline loop preload="none" disablepictureinpicture data-d="assets/video/5-cta-d.mp4" data-m="assets/video/5-cta-m.mp4" data-pd="assets/video/5-cta-d.jpg" data-pm="assets/video/5-cta-m.jpg"></video>
+    </div>
     <div class="film__shade" aria-hidden="true"></div>
 
     <div class="hud" aria-hidden="true">
       <span class="hud__c hud__c--tl"></span><span class="hud__c hud__c--tr"></span><span class="hud__c hud__c--bl"></span><span class="hud__c hud__c--br"></span>
       <span class="hud__geo">Братск · 56.15° N · 101.63° E</span>
-      <span class="hud__tc"><i class="hud__dot"></i><span id="tc">00:00:00</span></span>
+      <span class="hud__tc"><i class="hud__dot"></i><span id="tc">CH 01 / 05</span></span>
       <div class="hud__prog"><i id="prog"></i></div>
       <ol class="hud__ch">
         <li data-c="0">Контроль</li><li data-c="1">Электрика</li><li data-c="2">Сигнализация</li><li data-c="3">Камеры 360°</li><li data-c="4">Запись</li>
@@ -62,7 +67,7 @@
     </div>
 
     <!-- 01 -->
-    <div class="ch ch--hero" data-in="0" data-out=".14">
+    <div class="ch ch--hero" data-in="0" data-out=".2">
       <p class="ch__k"><span>01</span>Автоэлектрик в&nbsp;Братске</p>
       <h1 class="ch__h1" id="hero-title"><span class="ln"><span>Ваш автомобиль</span></span><span class="ln"><span>под&nbsp;контролем</span></span></h1>
       <div class="ch__row rv">
@@ -80,7 +85,7 @@
     </div>
 
     <!-- 02 -->
-    <div class="ch ch--elec" data-in=".24" data-out=".5">
+    <div class="ch ch--elec" data-in=".2" data-out=".4">
       <p class="ch__k"><span>02</span>Автоэлектрик · диагностика</p>
       <h2 class="ch__h2"><span class="ln"><span>Находим причину,</span></span><span class="ln"><span>а&nbsp;не&nbsp;меняем всё&nbsp;подряд</span></span></h2>
       <ul class="readout rv">
@@ -92,7 +97,7 @@
     </div>
 
     <!-- 03 -->
-    <div class="ch ch--alarm" data-in=".55" data-out=".69">
+    <div class="ch ch--alarm" data-in=".4" data-out=".6">
       <div class="ch__txt">
         <p class="ch__k"><span>03</span>Сигнализация со&nbsp;смартфона</p>
         <h2 class="ch__h2"><span class="ln"><span>Машина</span></span><span class="ln"><span>в&nbsp;вашем телефоне</span></span></h2>
@@ -111,7 +116,7 @@
     </div>
 
     <!-- 04 -->
-    <div class="ch ch--cams" data-in=".72" data-out=".84">
+    <div class="ch ch--cams" data-in=".6" data-out=".8">
       <div class="ch__txt">
         <p class="ch__k"><span>04</span>Камеры 360° · Android</p>
         <h2 class="ch__h2"><span class="ln"><span>Вид сверху.</span></span><span class="ln"><span>Без слепых зон</span></span></h2>
@@ -128,7 +133,7 @@
     </div>
 
     <!-- 05 -->
-    <div class="ch ch--cta" data-in=".88" data-out="1.01">
+    <div class="ch ch--cta" data-in=".8" data-out="1.01">
       <p class="ch__k"><span>05</span>Запись по&nbsp;телефону</p>
       <a class="bignum" href="tel:+73953262244" aria-label="Позвонить: 26-22-44"><span class="ln"><span>26‑22‑44</span></span></a>
       <div class="cta rv">
@@ -204,7 +209,7 @@
 <!-- 03 Cameras: full-bleed stage + view dial -->
 <section class="svc svc--cams" id="s-cams" aria-labelledby="t-cams">
   <div class="cams__bg" aria-hidden="true">
-    <img src="assets/img/screen-1600.webp" srcset="assets/img/screen-800.webp 800w, assets/img/screen-1600.webp 1600w" sizes="100vw" width="1600" height="1067" loading="lazy" alt="" data-parallax="10">
+    <img src="assets/img/screen-1600.webp" srcset="assets/img/screen-800.webp 800w, assets/img/screen-1600.webp 1600w" sizes="100vw" width="1600" height="1067" loading="lazy" alt="">
   </div>
   <div class="svc__num" aria-hidden="true">03</div>
   <div class="cams__inner">
@@ -337,7 +342,6 @@
 
 <script src="assets/js/gsap.min.js" defer></script>
 <script src="assets/js/ScrollTrigger.min.js" defer></script>
-<script src="assets/js/lenis.min.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/film.js" defer></script>
 </body>
